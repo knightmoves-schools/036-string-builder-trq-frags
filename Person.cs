@@ -1,4 +1,6 @@
-﻿namespace knightmoves;
+﻿using System.Text;
+
+namespace knightmoves;
 
 public class Person {
    private string firstName;
@@ -8,6 +10,20 @@ public class Person {
       this.firstName = firstName;
       this.lastName = lastName;
    }
-
-   // Add your code here
+   string getFullName(){
+      return this.firstName + " " + this.lastName;
+   }
+   StringBuilder getFullNameSB(){
+      StringBuilder sb = new StringBuilder();
+      sb.Append(this.firstName);
+      sb.Append(" ");
+      sb.Append(this.lastName);
+      return sb;
+   }
+   public string getFirstName(){
+      return this.firstName;
+   }
+   public string getLastName(){
+      return this.lastName;
+   }
 }
