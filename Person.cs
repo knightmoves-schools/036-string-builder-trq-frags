@@ -13,12 +13,12 @@ public class Person {
    string getFullName(){
       return this.firstName + " " + this.lastName;
    }
-   StringBuilder BuildFullName(){
+   public string BuildFullName(){
       StringBuilder sb = new StringBuilder();
       sb.Append(this.firstName);
       sb.Append(" ");
       sb.Append(this.lastName);
-      return sb;
+      return sb.ToString();
    }
    public string getFirstName(){
       return this.firstName;
